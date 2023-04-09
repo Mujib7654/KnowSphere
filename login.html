@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+	<div class="login-container">
+		<h1>Login</h1>
+		<form autocomplete="off" onsubmit="login(event)">
+			<label for="loginEmail">Email</label>
+			<input type="email" id="loginEmail" name="email" placeholder="Enter your Email">
+
+			<label for="loginPassword">Password</label>
+			<input type="password" id="loginPassword" name="password" placeholder="Enter your password">
+
+			<button type="submit">Login</button>
+		</form>
+		<div class="signup">
+			<p>Don't have an account?</p>
+			<a href="./signup.html">Sign up</a>
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+
+	  <script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+				apiKey: "AIzaSyBXSnGEfKTmoLznCzva3o2SLAJaJFG9s4g",
+				authDomain: "knowsphere-cf9d5.firebaseapp.com",
+				projectId: "knowsphere-cf9d5",
+				storageBucket: "knowsphere-cf9d5.appspot.com",
+				messagingSenderId: "748314546969",
+				appId: "1:748314546969:web:5fd2df213facf68af1eb88",
+				measurementId: "G-QEE9HRB35W"
+			  };
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	  </script>
+
+	<script src="./assets/js/auth.js"></script>
+</body>
+
+</html>

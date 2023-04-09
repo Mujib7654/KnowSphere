@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Profile</h1>
+    <img src="../images/logo.png" alt="">
+   
+  
+    <div style="text-align: center;">
+      <h3> Welcome to KnowSphere </h3>
+      <span id="name"></span>
+    </div>
+    <div style="text-align: center;">
+      
+     
+      <span id="email"></span>
+    </div>
+   
+    <div class="button">
+      <button type="button" id="btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+
+  
+  <script>
+    // Initialize Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyBXSnGEfKTmoLznCzva3o2SLAJaJFG9s4g",
+    authDomain: "knowsphere-cf9d5.firebaseapp.com",
+    databaseURL: "https://knowsphere-cf9d5-default-rtdb.firebaseio.com",
+    projectId: "knowsphere-cf9d5",
+    storageBucket: "knowsphere-cf9d5.appspot.com",
+    messagingSenderId: "748314546969",
+    appId: "1:748314546969:web:5fd2df213facf68af1eb88",
+    measurementId: "G-QEE9HRB35W"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
+    // Get user data and update HTML elements
+    const emailField = document.getElementById("email");
+
+
+
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        // User is signed in, get user data
+        const uid = user.uid;
+        const email = user.email;
+
+
+        // Update HTML elements with user data
+        emailField.innerText = email;
+      } else {
+        // User is signed out
+        console.log("User is signed out");
+      }
+    });
+
+    // Logout button function
+ 
+
+      function logout(){
+        firebase.auth().signOut()
+        window.localStorage.clear();
+        window.location.href = "../../index.html";
+      }
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          console.log(user)
+        }
+        else {
+          console.log('signOut success')
+          window.alert("Successfully SignOut.")
+        }
+      })
+
+</script>
+
+</body>
+</html>
