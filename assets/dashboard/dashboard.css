@@ -1,33 +1,4 @@
-/* body {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid white;
-  border-radius: 4px;
-  width: 500px;
-  margin: auto;
-}
-
-.button {
-  margin-top: 24px;
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 100%;
-  }
-} */
-
+/* 
 body{
   background-color: black;
 }
@@ -135,4 +106,122 @@ div {
   }
   
   
+ */
+
+ /* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f4f6; /* Light gray background */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center the container vertically */
+}
+
+.container {
+  background-color: #ffffff; /* White background */
+  width: 400px; /* Container width */
+  padding: 20px; /* Padding */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow */
+  text-align: center;
+  color: #333; /* Text color */
+  transform: scale(1); /* Initial scale for animation */
+  transition: transform 0.5s ease-in-out; /* Animation transition */
+}
+
+/* Add hover animation */
+.container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 16px;
+  display: block;
+  margin: 10px 0;
+  color: #555; /* Slightly darker gray text */
+}
+
+.button {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #525DE0; /* Blue button background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #444ABF; /* Darker blue on hover */
+}
+
+
+
+
+
+body {
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #333;
+  transform: perspective(1000px) rotateX(20deg);
+  animation: tiltBackground 5s linear infinite alternate;
+  transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+
+/* Add hover effect to rotate and move the container */
+.container:hover {
+  transform: perspective(1000px) rotateX(10deg) translateY(10px);
+}
+
+@keyframes tiltBackground {
+  0% {
+    transform: perspective(1000px) rotateX(20deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(25deg);
+  }
+}
+
+
 

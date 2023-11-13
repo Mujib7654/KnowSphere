@@ -77,10 +77,13 @@ for (let i = 0; i < whishlistBtns.length; i++) {
 
 
 // login and dashboard hidden function
+//middleware
 
 const loginBtn = document.getElementById("login-btn");
 const dashboardBtn = document.getElementById("dashboard-btn");
-
+const checkAuthLive = document.getElementById("checkAuthLive");
+const checkAuthBot = document.getElementById("myButtonLink");
+const checkauthMentor = document.getElementById("myButtonLink1");
 
 const isLoggedIn = window.localStorage.getItem("user");
 
@@ -88,8 +91,19 @@ if (isLoggedIn) {
 
   loginBtn.style.display = "none";
   dashboardBtn.style.display = "block";
+  checkAuthLive.href = './SphereMeet/lobby.html';
+  checkAuthBot.href = "./chatbot/chatbot.html";
+  checkauthMentor.href = "./mentor_doubt/doubt.html";
 } else {
 
   loginBtn.style.display = "block";
   dashboardBtn.style.display = "none";
+  checkAuthLive.href = 'login.html';
+  checkAuthBot.href = 'login.html';
+  checkauthMentor.href = 'login.html';
 }
+
+
+
+
+

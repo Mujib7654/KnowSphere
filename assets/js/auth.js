@@ -10,7 +10,7 @@ async function signup(e) {
     const result = await firebase
       .auth()
       .createUserWithEmailAndPassword(email.value, password.value);
-    console.log(result);
+    // console.log(result);
     await result.user.updateProfile({
       displayName: "User",
     });

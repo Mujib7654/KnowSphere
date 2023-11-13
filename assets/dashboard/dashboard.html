@@ -5,23 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>User Profile</title>
   <link rel="stylesheet" href="dashboard.css">
+  <style>
+    .slogan {
+      font-size: 18px;
+      font-style: italic;
+      color: #444ABF; /* Dark blue for the slogan */
+      margin: 20px 0;
+    }
+    .quote {
+      font-size: 16px;
+      color: #555; /* Slightly darker gray text for the quote */
+    }
+    h1 {
+      font-size: 32px; /* Larger font size */
+      color: #444ABF; /* Dark blue text color for the heading */
+      margin: 20px 0; /* Margin to add some spacing */
+      text-transform: uppercase; /* Uppercase text */
+    }
+    span#email-label {
+      color: #444ABF;
+    }
+    span#email {
+      color: #FF5733; /* Custom color for the email address */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>User Profile</h1>
-    <img src="../images/logo.png" alt="">
-   
-  
+    <h1>My Profile</h1>
+    <img src="../images/boy_23032.png" alt="" style="width: 100px; height: 100px;">
+    
     <div style="text-align: center;">
-      <h3> Welcome to KnowSphere </h3>
+      <h3>Welcome to KnowSphere</h3>
       <span id="name"></span>
     </div>
+  
     <div style="text-align: center;">
-      
-     
-      <span id="email"></span>
+      <span id="email-label">Email: <span id="email"></span></span>
     </div>
-   
+  
+    <div class="slogan">
+      "Unlocking Knowledge, Transforming Lives"
+    </div>
+  
+    <div class="quote">
+      "Education is not the filling of a pail, but the lighting of a fire." - William Butler Yeats
+    </div>
+  
     <div class="button">
       <button type="button" id="btn" onclick="logout()">Logout</button>
     </div>

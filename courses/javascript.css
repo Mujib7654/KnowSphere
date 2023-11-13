@@ -1,0 +1,768 @@
+/*** IMAGES & EMBEDDED VIDEOS RESPONSIVE ***/
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+h2 {
+  color: #378aad;
+  font-size: 200%
+}
+
+
+/**LOGIN PAGE**/
+
+body#page-login-index .loginpanel {
+  margin: auto;
+  color: #0894cd;
+}
+
+body#page-login-index .loginpanel h2 {
+  color: #0894cd;
+  font-size: 200%;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 2px solid #0894cd;
+}
+
+body#page-login-index .signuppanel h2 {
+  color: #0894cd;
+  font-size: 200%;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 2px solid #0894cd;
+}
+
+body#page-login-index .signuppanel p {
+  font-size: 120%;
+}
+
+body#page-login-index .loginform div.form-label,
+body#page-login-index .loginform div.form-input {
+  border-bottom: 15px solid transparent;
+}
+
+body#page-login-index .subcontent.loginsub {
+  padding: 40px;
+}
+
+
+/**BLOCKS**/
+
+.block {
+  border-style: none;
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+.block .header .title h2 {
+  font-size: 125%;
+  color: #0096db;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 3px solid #0096db;
+}
+
+.block_settings.block .header .title h2 {
+  font-size: 125%;
+  color: #00356C;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 3px solid #00356c;
+}
+
+.block_completionstatus.block .header .title h2 {
+  font-size: 125%;
+  color: #05a995;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 3px solid #05a995;
+}
+
+.block_completionstatus.block .content {
+  text-transform: uppercase;
+}
+
+.block_completionstatus.block table.generaltable {
+  background-color: red;
+}
+
+
+/**COURSE CATEGORIES**/
+
+.moreinfo,
+.enrolmenticons {
+  visibility: hidden;
+}
+
+.coursebox.clearfix.odd,
+.coursebox.clearfix.even {
+  background-color: #ffffff;
+  border-radius: 0px;
+}
+
+.category.notloaded.with_children.loaded.collapsed {
+  background-color: #ffffff;
+}
+
+h3.categoryname {
+  background-color: #ffffff;
+}
+
+
+/**COURSE PAGE FORMATTING**/
+
+.pagelayout-course header h1,
+.pagelayout-incourse header h1 {
+  display: none;
+}
+
+.course-content ul li.section.main {
+  border-bottom: none;
+}
+
+.summary h1 {
+  color: #378aad;
+}
+
+.caption a {
+  color: #0578A6;
+}
+
+
+/**QUIZ FORMATTING**/
+
+.modified {
+  padding-top: 50px;
+  font-size: 85%;
+  font-style: italic;
+  text-align: right;
+}
+
+.que .formulation {
+  background-color: #fff;
+  border-radius: 0px;
+  border: solid 1px #e8e8e8;
+}
+
+.que .info {
+  border-radius: 0px;
+  background-color: #e8e8e8;
+}
+
+.path-mod-quiz #mod_quiz_navblock .qnbutton .thispageholder {
+  border: none;
+  padding: 1px;
+}
+
+.que .formulation div.prompt {
+  font-size: 110%;
+  color: #378aad;
+  font-weight: bold;
+}
+
+.que .qtext p {
+  font-size: 120%;
+}
+
+.que .info {
+  background-color: #fff;
+}
+
+h3.no {
+  color: #378aad;
+}
+
+div .state {
+  display: none;
+}
+
+.questionflagtext {
+  display: none;
+}
+
+.questionflagimage {
+  display: none;
+}
+
+
+/*******BOOK FORMATING******/
+
+div.box.generalbox.book_content h2 {
+  color: #378aad;
+}
+
+
+/**Search Formatting**/
+
+div.searchhelp {
+  text-align: left;
+}
+
+
+/******************************************************
+	George Custom CSS START
+******************************************************/
+
+
+/**Bootstrap thumbnail customise**/
+
+.thumbnail {
+  background: #f4f4f4;
+}
+
+
+/**heading customise**/
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/******************************************************
+	CUSTOM BTN VALUES
+******************************************************/
+
+.btn {
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0px 0 rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
+}
+
+
+/******************************************************
+	STANDARD BUTTONS
+******************************************************/
+
+.btn-default {
+  border: 2px solid #C4C4C4;
+  color: #737373;
+  padding: 12px 22px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background: #FFFFFF;
+  border-color: #949494;
+  color: #737373;
+}
+
+.btn-default:active,
+.btn-default.active {
+  border-color: #737373;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: #0586a0;
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: #33a6cc;
+  color: #ffffff;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background: #0586a0;
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.btn-success {
+  background: #00bf6f;
+  color: #ffffff;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background: #39bf87;
+}
+
+.btn-success:active,
+.btn-success.active {
+  background: #008c52;
+  box-shadow: none;
+}
+
+.btn-info {
+  background: #31cde8;
+  color: #ffffff;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background: #5fd4e8;
+}
+
+.btn-info:active,
+.btn-info.active {
+  background: #35a2b5;
+  box-shadow: none;
+}
+
+.btn-warning {
+  background: #eb8f34;
+  color: #ffffff;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background: #eba259;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+  background: #b87430;
+  box-shadow: none;
+}
+
+.btn-danger {
+  background: #f25454;
+  color: #ffffff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background: #f26d6d;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+  background: #bf4343;
+  box-shadow: none;
+}
+
+
+/******************************************************
+	BUTTON SIZING
+******************************************************/
+
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: 2px 6px;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 11px 12px;
+  color: #ffffff;
+}
+
+.btn-lg {
+  padding: 20px 40px;
+  border-radius: 4px;
+}
+
+.btn-xs.btn-default,
+.btn-xs.outline {
+  padding: 0px 4px;
+}
+
+.btn-sm.btn-default,
+.btn-sm.outline {
+  padding: 6px 10px;
+}
+
+.btn-lg.btn-default,
+.btn-lg.outline {
+  padding: 18px 38px;
+}
+
+
+/**Custom container for thumbnail*/
+
+.container-fluid2 {
+  padding-right: 02px;
+  padding-left: 02px;
+}
+
+
+/* Mini layout previews
+-------------------------------------------------- */
+
+.mini-layout {}
+
+.mini-layout,
+.mini-layout .mini-layout-body,
+.mini-layout.fluid .mini-layout-sidebar {
+  height: 42px;
+}
+
+.mini-layout {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.mini-layout div {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.mini-layout .mini-layout-body {
+  background-color: #fff5f5;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.mini-layout.fluid .mini-layout-sidebar,
+.mini-layout.fluid .mini-layout-header,
+.mini-layout.fluid .mini-layout-body {
+  float: left;
+  vertical-align: middle;
+}
+
+.mini-layout.fluid .mini-layout-sidebar {
+  background-color: #f4f4f4;
+  width: 70%;
+}
+
+.mini-layout.fluid .mini-layout-body {
+  background-color: #f4f4f4;
+  width: 27.5%;
+  margin-left: 2.5%;
+  vertical-align: middle;
+}
+
+a.btn {
+  color: #fff;
+}
+
+a.btn-primary {
+  color: #fff;
+}
+
+a.btn-sm {
+  color: #fff;
+}
+
+a.btn-block {
+  color: #fff;
+}
+
+a.btn:visited {
+  color: #fff;
+}
+
+a.btn-primary:visited {
+  color: #fff;
+}
+
+a.btn-sm:visited {
+  color: #fff;
+}
+
+a.btn-block:visited {
+  color: #fff;
+}
+
+a.btn:active {
+  color: #fff;
+}
+
+a.btn-primary:active {
+  color: #fff;
+}
+
+a.btn-sm:active {
+  color: #fff;
+}
+
+a.btn-block:active {
+  color: #fff;
+}
+
+.page-header {
+  padding-bottom: 2px;
+  margin: 5px 0 20px;
+}
+
+.hero-unit {
+  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.GeorgeSpan {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+
+/****BOOK FORMATTING*****/
+
+div.box.generalbox.book_content h2 {
+  color: #378aad;
+  padding: 10px 10px 10px 0px;
+  font-size: 150%;
+}
+
+
+/****FORMATTING CLASSES*****/
+
+.example {
+  background: #CBDEE6;
+  border: 1px solid #98ABB3;
+  border-radius: 5px;
+  padding: 13px;
+  width: 85%;
+  margin: auto;
+}
+
+.information {
+  border: 1px solid #98ABB3;
+  border-radius: 5px;
+  padding: 13px;
+  width: 85%;
+  margin: auto;
+}
+
+.note {
+  background: #CBDEE6;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0px;
+  color: #222222;
+  font-size: 100%;
+}
+
+
+/****LESSON FORMATTING*****/
+
+.correctanswer.generalbox em {
+  font-size: 130%;
+  padding: 50px 0px 10px 0px;
+  color: #378aad;
+}
+
+#page-mod-lesson-view #region-main legend.ftoggler {
+  display: none;
+}
+
+.questiondisplay {
+  background: #CBDEE6;
+  border: 1px solid #98ABB3;
+  border-radius: 5px;
+  padding: 13px;
+  margin: 10px;
+  width: 90%;
+}
+
+.questiondisplay h2 {
+  color: #98ABB3;
+}
+
+#page-mod-lesson-view #region-main div.answeroption {
+  padding: 5px;
+}
+
+#page-mod-lesson-view #region-main h3 {
+  color: #378aad;
+  font-size: 180%;
+}
+
+#page-mod-lesson-view #region-main div.singlebutton input,
+#page-mod-lesson-view #region-main div.singlebutton input:focus,
+#page-mod-lesson-view #region-main div.singlebutton input:active {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #0586a0;
+}
+
+#page-mod-lesson-view #region-main div.singlebutton input:hover {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #35a2b5;
+}
+
+#page-mod-lesson-view #region-main input#id_submitbutton,
+#page-mod-lesson-view #region-main input#id_submitbutton:focus,
+#page-mod-lesson-view #region-main input#id_submitbutton:active {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #0586a0;
+}
+
+#page-mod-lesson-view #region-main input#id_submitbutton:hover {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #35a2b5;
+}
+
+#page-mod-lesson-view #region-main p,
+a,
+li {
+  font-size: 100%;
+}
+
+.keymessage {
+  background-color: #5ea1bd;
+  border-left: 5px solid #0586a0;
+  padding: 8px;
+  margin: 10px;
+  font-size: 120%;
+  color: #fff;
+  line-height: 110%;
+}
+
+div.appraisal-stage.appraisal-stage-inprogress {
+  background-color: #fff;
+}
+
+div.stagelist {
+  background-color: #fff;
+}
+
+div.stagetitle h3 {
+  color: #378aad;
+}
+
+div.stageinfo h4 {
+  color: #378aad;
+}
+
+#page-totara-appraisal-myappraisal div.singlebutton input,
+#page-totara-appraisal-myappraisal div.singlebutton input:focus,
+#page-totara-appraisal-myappraisal div.singlebutton input:active {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #0586a0;
+}
+
+#page-totara-appraisal-myappraisal div.singlebutton input:hover {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  padding: 12px 22px;
+  background: #35a2b5;
+}
+
+a.link-as-button {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  background: #0586a0;
+}
+
+a.link-as-button:hover {
+  box-shadow: none;
+  border: 1px solid #C4C4C4;
+  color: #fff;
+  background: #35a2b5;
+}
+
+#page-totara-appraisal-myappraisal span.legend {
+  color: #378aad;
+  padding: 5px;
+}
+
+#page-totara-appraisal-myappraisal img.smallicon {
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+
+/* Pramith fix */
+
+#page-totara-appraisal-myappraisal .mform .fitem fieldset legend {
+  float: left;
+}
+
+
+/*
+.mform .fitem fieldset legend {
+float: none;
+}*/
+
+
+/****georgevideoTest*****/
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+
+.flex-video.vimeo {
+  padding-top: 0;
+}
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-device-width: 800px),
+only screen and (device-width:1024px) and (device-height: 600px),
+only screen and (width: 1280px) and (orientation: landscape),
+only screen and (device-width: 800px),
+only screen and (max-width: 767px) {
+  .flex-video {
+    padding-top: 0;
+  }
+}
