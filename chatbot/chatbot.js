@@ -1,7 +1,7 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
-const apiKey = "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";
+const apiKey = "";
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();

@@ -85,6 +85,14 @@ const checkAuthLive = document.getElementById("checkAuthLive");
 const checkAuthBot = document.getElementById("myButtonLink");
 const checkauthMentor = document.getElementById("myButtonLink1");
 
+//quiz
+const blockchain = document.getElementById("blockchain");
+const graphic = document.getElementById("graphic");
+const react = document.getElementById("react");
+const fullstack = document.getElementById("fullstack");
+const mern = document.getElementById("mern");
+const android = document.getElementById("android");
+
 const isLoggedIn = window.localStorage.getItem("user");
 
 if (isLoggedIn) {
@@ -94,6 +102,14 @@ if (isLoggedIn) {
   checkAuthLive.href = './SphereMeet/lobby.html';
   checkAuthBot.href = "./chatbot/chatbot.html";
   checkauthMentor.href = "./mentor_doubt/doubt.html";
+
+  //quiz
+  blockchain.href = "./quiz/blockchain.html";
+  graphic.href = "./quiz/graphic.html";
+  react.href = "./quiz/react.html";
+  fullstack.href = "./quiz/fullstack.html";
+  mern.href = "./quiz/mern.html";
+  android.href = "./quiz/android.html";
 } else {
 
   loginBtn.style.display = "block";
@@ -101,6 +117,14 @@ if (isLoggedIn) {
   checkAuthLive.href = 'login.html';
   checkAuthBot.href = 'login.html';
   checkauthMentor.href = 'login.html';
+
+  //quiz
+  blockchain.href = "login.html";
+  graphic.href = "login.html";
+  react.href = "login.html";
+  fullstack.href = "login.html";
+  mern.href = "login.html";
+  android.href = "login.html";
 }
 
 
