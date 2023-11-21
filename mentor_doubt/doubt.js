@@ -13,9 +13,9 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   // reference your database
-  var Battle_of_BookwormsDB = firebase.database().ref("Battle_of_Bookworms");
+  var StudentsDoubtDB = firebase.database().ref("StudentsDoubt");
   
-  document.getElementById("Battle_of_Bookworms").addEventListener("submit", submitForm);
+  document.getElementById("StudentsDoubt").addEventListener("submit", submitForm);
   
   function submitForm(e) {
     e.preventDefault();
@@ -27,26 +27,20 @@ const firebaseConfig = {
     var question = getElementVal("question");
     
     saveMessages(firstName,lastName,email,number,question);
-    
-    //   enable alert
-    document.querySelector(".alert").style.display = "block";
 
-    //   remove the alert
-    setTimeout(() => {
-      document.querySelector(".alert").style.display = "none";
-    }, 3000);
+    showFormSubmittedAlert();
   
     //   reset the form
-    document.getElementById("Battle_of_Bookworms").reset();
+    document.getElementById("StudentsDoubt").reset();
 
     
 
   }
   
   const saveMessages = (firstName,lastName,email,number,question) => {
-    var newBattle_of_Bookworms = Battle_of_BookwormsDB.push();
+    var newStudentsDoubt = StudentsDoubtDB.push();
     
-    newBattle_of_Bookworms.set({
+    newStudentsDoubt.set({
       firstName: firstName,
       lastName : lastName,
       email:email,
@@ -57,4 +51,15 @@ const firebaseConfig = {
   
   const getElementVal = (id) => {
     return document.getElementById(id).value;
+  };
+
+  const showFormSubmittedAlert = () => {
+    // Enable the alert
+    var alertElement = document.querySelector(".alert");
+    alertElement.style.display = "block";
+  
+    // Remove the alert after 3 seconds
+    setTimeout(() => {
+      alertElement.style.display = "none";
+    }, 3000);
   };
