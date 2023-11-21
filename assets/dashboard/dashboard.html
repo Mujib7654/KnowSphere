@@ -106,7 +106,8 @@
 
       function logout(){
         firebase.auth().signOut()
-        window.localStorage.clear();
+        // window.localStorage.clear();
+        window.localStorage.removeItem("user");
         window.location.href = "../../index.html";
       }
       firebase.auth().onAuthStateChanged((user) => {

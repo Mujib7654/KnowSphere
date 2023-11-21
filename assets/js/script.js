@@ -93,6 +93,9 @@ const fullstack = document.getElementById("fullstack");
 const mern = document.getElementById("mern");
 const android = document.getElementById("android");
 
+//notes
+const notesAuth = document.getElementById("notesAuth");
+
 const isLoggedIn = window.localStorage.getItem("user");
 
 if (isLoggedIn) {
@@ -103,6 +106,7 @@ if (isLoggedIn) {
   checkAuthBot.href = "./chatbot/chatbot.html";
   checkauthMentor.href = "./mentor_doubt/doubt.html";
 
+
   //quiz
   blockchain.href = "./quiz/blockchain.html";
   graphic.href = "./quiz/graphic.html";
@@ -110,6 +114,9 @@ if (isLoggedIn) {
   fullstack.href = "./quiz/fullstack.html";
   mern.href = "./quiz/mern.html";
   android.href = "./quiz/android.html";
+
+  //notes
+  notesAuth.href = "./notes/notes.html";
 } else {
 
   loginBtn.style.display = "block";
@@ -125,6 +132,9 @@ if (isLoggedIn) {
   fullstack.href = "login.html";
   mern.href = "login.html";
   android.href = "login.html";
+
+  //notes
+  notesAuth.href = "login.html";
 }
 
 
